@@ -7,10 +7,31 @@ body{
     color: #333;
     background-color: #f4f4f4;
 }
+.headings{
+    background-color: #7099df;
+    padding: 10px;
+    margin-bottom: 20px;
+    color: #fff;
+}
 main h1, h2, p{
     text-align: center;
 }
 main p{
     margin-top: 10px;
+}
+main ol li{
+    margin: 5px;
+    margin-left: 50px;
+    padding: 10px;
+    
+}
+main a{
+    text-decoration: underline;
+    margin-left: 10px;
+    color: #11439b;
+}
+main a:hover{
+    color: #7099df;
+    text-decoration:overline;
 }
 
