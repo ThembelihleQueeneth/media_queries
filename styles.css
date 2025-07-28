@@ -111,7 +111,7 @@ nav ul li a:hover{
 footer{
     background: #11439b;
     color: #fff;
-    height: 43vh;
+    
 }
 .footer-content {
     display: flex;
@@ -139,34 +139,7 @@ footer{
 .footer-content a:hover {
     text-decoration: underline;
 }
-form{
-    background-color: #7099df;
-    border-radius: 12px;
-    width: 40%;
-    padding: 10px;
-}
-form .red-star{
-    color: rgb(231, 89, 89);
-}
-form label{
-    padding: 10px;
-}
-form input{
-    margin: 10px;
-}
-form button{
-    margin-top: 10px;
-    margin-left: 8%;
-    width: 40%;
-    height: 5vh;
-    font-size: 16px;
-    border-radius: 10px;
-    border: none;
-}
-form button:hover{
-    background-color: #11439b;
-    color: #fff;
-}
+
 @media (max-width: 1024px) {
     nav ul {
         margin-left: auto; 

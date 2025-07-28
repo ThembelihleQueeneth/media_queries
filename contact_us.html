@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us Page</title>
+  <style>
+    body {
+      background-image: url('media/images/background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      color: #fff;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    h1 {
+      text-align: center;
+      padding-top: 20px;
+      color: #ffffff;
+    }
+
+    form {
+      background-color: rgba(112, 153, 223, 0.95);
+      border-radius: 12px;
+      width: 90%;
+      max-width: 600px;
+      padding: 20px;
+      margin: 20px auto;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.9);
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    .red-star {
+      color: rgb(231, 89, 89);
+    }
+
+    input,
+    select {
+      width: 100%;
+      padding: 8px;
+      margin-top: 4px;
+      border-radius: 6px;
+      border: none;
+      box-sizing: border-box;
+    }
+
+    button {
+      margin-top: 20px;
+      width: 100%;
+      height: 45px;
+      font-size: 16px;
+      border-radius: 10px;
+      border: none;
+      background-color: #11439b;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #0c326f;
+    }
+  </style>
+</head>
+<body>
+  <h1>Chat to our Team</h1>
+  <form onsubmit="return handleSubmit(event)">
+    <label for="firstname">First Name: <span class="red-star">*</span></label>
+    <input type="text" id="firstname" name="firstname" required />
+
+    <label for="surname">Last Name: <span class="red-star">*</span></label>
+    <input type="text" id="surname" name="surname" required />
+
+    <label for="email">Email: <span class="red-star">*</span></label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="phone">Phone: <span class="red-star">*</span></label>
+    <input type="tel" id="phone" name="phone" required />
+
+    <label for="job_title">Job Title: <span class="red-star">*</span></label>
+    <input type="text" id="job_title" name="job_title" required />
+
+    <label for="company">Company: <span class="red-star">*</span></label>
+    <input type="text" id="company" name="company" required />
+
+    <label for="company_1">Company Address 1: <span class="red-star">*</span></label>
+    <input type="text" id="company_1" name="company_1" required />
+
+    <label for="company_2">Company Address 2: <span class="red-star">*</span></label>
+    <input type="text" id="company_2" name="company_2" required />
+
+    <label for="city">City: <span class="red-star">*</span></label>
+    <input type="text" id="city" name="city" required />
+
+    <label for="country">Country: <span class="red-star">*</span></label>
+    <input type="text" id="country" name="country" value="South Africa" required />
+
+    <label for="province">Province: <span class="red-star">*</span></label>
+    <select id="province" name="province" required>
+      <option value="">Select Province</option>
+      <option value="Mpumalanga">Mpumalanga</option>
+      <option value="Limpopo">Limpopo</option>
+      <option value="KZN">KwaZulu-Natal</option>
+      <option value="Northern Cape">Northern Cape</option>
+      <option value="Western Cape">Western Cape</option>
+      <option value="Eastern Cape">Eastern Cape</option>
+      <option value="Free State">Free State</option>
+      <option value="Gauteng">Gauteng</option>
+      <option value="North West">North West</option>
+    </select>
+
+    <label for="code">Postal Code: <span class="red-star">*</span></label>
+    <input type="number" id="code" name="code" required />
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault(); 
+      alert("Form Submitted Successfully!");
+    }
+  </script>
+</body>
+</html>
